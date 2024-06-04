@@ -1,12 +1,17 @@
 <template>
   <div class="demo">
     <Button type="primary" @click="handleClick">Welcome!</Button>
+    <createMoudleA />
   </div>
 </template>
 
 <script>
+import createMoudleA from './createMoudleA.vue';
 export default {
   name: 'Demo',
+  components: {
+    createMoudleA
+  },
   setup() {
   },
   methods: {
@@ -19,9 +24,7 @@ export default {
 
 <style lang="less" scoped>
   .demo{
-    color: lightcoral;
     font-size: @font-size;
     text-align: center;
-    margin: 300px 0 0 0;
   }
 </style>
