@@ -59,6 +59,7 @@ const config = ({ mode }) => {
     },
     server: {
       open: true,
+      port:4090,
       proxy: {
         '/api': {
           target: 'http://localhost:8080',

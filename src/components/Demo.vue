@@ -1,6 +1,6 @@
 <template>
   <div class="demo">
-    <Button type="primary" @click="handleClick">Welcome!</Button>
+    <!-- <Button type="primary" @click="handleClick">Welcome!</Button> -->
     <createMoudleA />
   </div>
 </template>
@@ -15,9 +15,6 @@ export default {
   setup() {
   },
   methods: {
-    handleClick() {
-      this.$Message.info('Welcome to View UI Plus Demo!')
-    }
   }
 }
 </script>
